@@ -6,13 +6,13 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 07:55:42 by deordone          #+#    #+#             */
-/*   Updated: 2024/01/14 22:21:05 by carmeno          ###   ########.fr       */
+/*   Updated: 2024/01/16 12:12:06 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_dprintf.h"
 
-int	print_special(int fd, char spec, va_list argptr)
+int	dprint_special(int fd, char spec, va_list argptr)
 {
 	int	aux;
 
@@ -55,7 +55,7 @@ int	ft_dprintf(int fd, const char *str, ...)
 		if (str[i] == '%' && str[i + 1] != '\\')
 		{
 			i++;
-			aux += print_special(fd, str[i], argptr);
+			aux += dprint_special(fd, str[i], argptr);
 		}
 		else
 		{
