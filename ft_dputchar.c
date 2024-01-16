@@ -6,13 +6,13 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 07:55:40 by deordone          #+#    #+#             */
-/*   Updated: 2024/01/14 22:21:54 by carmeno          ###   ########.fr       */
+/*   Updated: 2024/01/16 11:51:59 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_dprintf.h"
 
-int	ft_putchar(int fd, int c)
+int	ft_dputchar(int fd, int c)
 {
 	return (write(fd, &c, 1));
 }
