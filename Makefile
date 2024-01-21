@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libftprintf.a
+NAME = libftdprintf.a
 
 SOURCES = \
 	ft_dprintf.c ft_dputchar.c ft_dputstr.c ft_dputnbr.c ft_dputunsnbr.c \
