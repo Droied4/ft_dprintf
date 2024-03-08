@@ -6,17 +6,17 @@
 
 This project consists in duplicate the behavior of the C function dprintf(). It is not necessary to implement the buffer management of the original function. It must handle the following parameters:
 
-- **%c** char type variables.
+- **`%c`** char type variables.
 
-- **%s** string type variables.
+- **`%s`** string type variables.
 
-- **%i** int type variables.
+- **`%i`** int type variables.
 
-- **%u** unsigned int type variables.
+- **`%u`** unsigned int type variables.
 
-- **%x** and **%X** hexadecimal int type variables (uppercase and lowercase).
+- **`%x`** and **`%X`** hexadecimal int type variables (uppercase and lowercase).
 
-- **%p** pointer type variables.
+- **`%p`** pointer type variables.
 
 ## Instructions
 
@@ -35,25 +35,28 @@ To delete all files generated with make, go to the path and run:
 $ make fclean
 ```
 
-### 3. Using it in your code
+### 3. Usage
 
-To use this project in your code, simply include this header:
-```
-#include "ft_dprintf.h"
-```
-### 4. Example
-A basic example of how it works
-```
-#include "ft_dprintf.h"
+- **Prototype:** `int ft_dprintf(int fd, const char *str, ...);`
+- **Parameters:**
+  - 📁 `fd`: The file descriptor to write.
+  - 📜 `str`: the string to print.
+- **Return value:**
+  - 📜 Bytes Write: Returns the bytes write it.
+  - `🚫 -1`: Indicates an error occurred.
+- **Description:** printf function.
 
-int main (void)
-{
-  int num = 42;
+## Repository Structure
 
-  ft_dprintf(2, "HI! %i\n", num);
-  return (0);
-}
+```sh
+└── printf/
+    ├── *.c
+    ├── *.h
+    ├── Makefile
 ```
+
+---
+
 
 ## Info +
 
